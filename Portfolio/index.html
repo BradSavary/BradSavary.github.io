@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brad Savary - Portfolio</title>
+    <link rel="stylesheet" href="css/base.css">
+    <meta name="description" content="Portfolio de Brad Savary, étudiant en développement web et création graphique. Découvrez mes projets et compétences.">
+    <link rel="icon" href="./assets/favicon.svg">
+</head>
+<body>
+    <nav>
+        <h1 class="nav__title">Brad Savary</h1>
+        <ul class="nav__items">
+            <li class="nav__item-container">
+            <a class="nav__item" href="#header">Accueil</a>
+            </li>
+            <li class="nav__item-container">
+            <a class="nav__item" href="#profil">Profil</a>
+            </li>
+            <li class="nav__item-container">
+            <a class="nav__item" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav__item-container">
+            <a class="nav__item" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="burger-menu"></div>
+        <input type="checkbox" id="burger-toggle">
+        <label for="burger-toggle" class="burger-icon">
+            <img class="burger-logo" draggable="false" src="./assets/burger.svg" alt="">
+        </label>
+        <ul class="burger-nav">
+            <li><a href="#header">Accueil</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <header id="header">
+        <h2 class="header__title">
+        à la recherche d'un développeur web ?
+    </h2>
+        <hr class="header__separator">
+        <img class="header__svg" draggable="false" src="./assets/arrow_down.svg" alt="">
+    </header>
+    <section id="profil" class="profil">
+        <img class="profil__img" draggable="false" src="./assets/bradsavary.webp" alt="">
+        <div class="profil__content">
+            <h2 class="profil__title">Bonjour à tous !</h2>
+            <p class="profil__desc">Je m’appelle Brad SAVARY, j'ai 19 ans et je suis actuellement étudiant en 2ème année de MMI. Je vous présente mon portfolio qui reflète les compétences que j’ai acquise. Dans ma formation, j’ai pu enrichir mes compétences en développement web et création graphique Je vous invite à consulter le panel de mes projets ci-dessous.</p>
+            <button class="profil__button" onclick="location.href='#portfolio'">Continuer</button>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <h2 class="portfolio__title">Portfolio</h2>
+        <hr class="portfolio__separator">
+        <div class="portfolio__grid">
+            <div class="portfolio__item projet-dashboard" id="projet-dashboard">
+                <img class="portfolio__img" draggable="false" src="./assets/projet-dashboard.jpg" alt="">
+                <h3 class="portfolio__item-title">Dashboard</h3>
+                <p class="portfolio__item-desc">Librairie JS et API</p>
+            </div>
+            <div class="portfolio__item" id="projet-map">
+                <img class="portfolio__img" draggable="false" src="./assets/projet-map.jpg" alt="">
+                <h3 class="portfolio__item-title">Map Intercative</h3>
+                <p class="portfolio__item-desc">Librairie JS</p>
+            </div>
+            <div class="portfolio__item" id="projet-iconographie">
+                <img class="portfolio__img" draggable="false" src="./assets/projet-icones.jpg" alt="">
+                <h3 class="portfolio__item-title">Création d’icones </h3>
+                <p class="portfolio__item-desc">Illustrator</p>
+            </div>
+            <div class="portfolio__item">
+                <a href="https://www.figma.com/proto/48l5KxSFCejVs3FigOyWw9/Savary-Brad---Super-Smash-Bros.-Ultimate?page-id=5%3A2&node-id=83-1556&starting-point-node-id=19%3A1060&t=KYxJzUJJCEhIFgSt-1" target="_blank">
+                    <img class="portfolio__img" draggable="false" src="./assets/projet-app.jpg" alt="">
+                    <h3 class="portfolio__item-title">Proto App</h3>
+                    <p class="portfolio__item-desc">Figma, UI / UX</p>
+                </a>
+            </div>
+            <div class="portfolio__item">
+                <a href="https://www.figma.com/proto/OZL8PA5arZlEm6WVbKX4mM/FRISE---Culture-Artistique?page-id=0%3A1&node-id=1-2209&viewport=289%2C373%2C0.28&t=YVyY3v9cs79IT2yy-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2209" target="_blank">
+                    <img class="portfolio__img" draggable="false" src="./assets/projet-frise.jpg" alt="">
+                    <h3 class="portfolio__item-title">Frise Design</h3>
+                    <p class="portfolio__item-desc">Ilustrator, Figma</p>
+                </a>
+            </div>
+            <div class="portfolio__item">
+                <a href="https://www.figma.com/design/BGUQndywquqwiTWuntaqCa/SAVARY_MARIEN?node-id=0-1&t=Ndfi05K2aWNXZvbE-1" target="_blank">
+                    <img class="portfolio__img" draggable="false" src="./assets/projet-analyse_aéroport.jpg" alt="">
+                    <h3 class="portfolio__item-title">Analyse UI/ UX</h3>
+                    <p class="portfolio__item-desc">User Flow, Wireframe, Proto</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="footer__contacts">
+            <div class="footer__contact">
+                <h3 class="footer__contact__title">Mail</h3>
+                <p class="footer__contact__desc">brad.savary10@gmail.com</p>
+            </div>
+            <div class="footer__contact">
+                <h3 class="footer__contact__title">Téléphone</h3>
+                <p class="footer__contact__desc">06 98 27 45 45</p>
+            </div>
+        </div>
+        <div class="footer__medias">
+                <img class="footer__media" draggable="false" src="./assets/CV.svg" id="CV" alt="CV">
+            <a href="https://www.linkedin.com/in/brad-savary-07322b294/" target="_blank">
+                <img class="footer__media" draggable="false" src="./assets/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/bradsavary" target="_blank">
+                <img class="footer__media" draggable="false" src="./assets/github.svg" alt="GitHub">
+            </a>
+        </div>
+    </footer>
+    <div id="popup" class="popup"></div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="particules.js"></script>
+</body>
+</html>

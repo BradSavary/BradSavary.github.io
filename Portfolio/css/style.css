@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Variables */
+
+:root {
+    --color-green: #133E23;
+    --color-white: #D9D9D9;
+    --color-black: #1F1F1F;
+    --color-gray: #323533;
+    --color-light-green: #528063;
+}
+
+
+/*Body*/
+
+body {
+    /* Styles for body */
+    font-family: "Inter", sans-serif;
+    background-color: var(--color-white);
+}
+
+/* Navigation */
+
+nav {
+    /* Styles for navigation */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--color-white);
+    z-index: 5;
+}
+
+.nav__title {
+    /* Styles for navigation title */
+    font-size: 2.5rem;
+    color: var(--color-green);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.nav__items {
+    /* Styles for navigation items container */
+    max-width: 75%;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__item {
+    /* Styles for each navigation item */
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+/* Header */
+
+header{
+    /* Styles for header */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    line-height: 1.3;
+}
+
+.header__title {
+    /* Styles for header title */
+    width: 40%;
+    max-width: 100%;
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-green);
+}
+
+.header__separator {
+    /* Styles for header separator */
+    width: 20%;
+    max-width: 75%;
+    border-top: 4px solid var(--color-light-green);
+}
+
+.header__svg {
+    /* Styles for header SVG image */
+}
+
+/* Profile Section */
+.profil {
+    /* Styles for profile section */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    padding: 3rem 10rem;
+    background-color: var(--color-green);
+    color: var(--color-white);
+}
+
+.profil__img {
+    /* Styles for profile image */
+    min-width: 30%;
+    max-width: 75%;
+}
+
+.profil__content {
+    /* Styles for profile content container */ 
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.profil__title {
+    /* Styles for profile title */
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.profil__desc {
+    /* Styles for profile description */
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.profil__button {
+    /* Styles for profile button */
+    width: 25rem;
+    max-width: 80%;
+    padding: 1rem 2rem;
+    background-color: var(--color-white);
+    color: var(--color-green);
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    /* Styles for portfolio section */
+    padding: 5rem 10rem;
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.portfolio__title {
+    /* Styles for portfolio title */
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-green);
+    text-align: center;
+    padding: 2rem;
+}
+
+.portfolio__separator {
+    /* Styles for portfolio separator */
+    width: 10%;
+    max-width: 50%;
+    border-top: 4px solid var(--color-light-green);
+    margin: 0 auto 3rem auto;
+}
+
+.portfolio__grid {
+    /* Styles for portfolio grid */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-items: center;
+    grid-gap: 1rem;
+}
+
+.portfolio__item {
+    /* Styles for each portfolio item */
+    max-width: 30rem;
+    min-width: 25rem;   
+    text-align: center;
+}
+
+.portfolio__img {
+    /* Styles for portfolio item image */
+    width: 100%;
+    height: auto;
+    border: var(--color-gray) 1px solid;
+    border-radius: 10px;
+}
+
+.portfolio__item-title {
+    /* Styles for portfolio item title */
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-black);
+    text-transform: uppercase;
+}
+
+.portfolio__item-desc {
+    /* Styles for portfolio item description */
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--color-gray);
+    margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+    /* Styles for footer */
+    height: 15rem;
+    padding: 3rem 10rem;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer__contacts {
+    /* Styles for footer contacts container */
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.footer__contact {
+    /* Styles for each footer contact */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer__contact__title {
+    /* Styles for footer contact title */
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer__contact__desc {
+    /* Styles for footer contact description */
+    font-size: 1.5rem;
+}
+
+.footer__medias {
+    /* Styles for footer media container */
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.footer__media {
+    /* Styles for each footer media icon */
+    width: 3rem;
+    font-size: 2rem;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.footer__media:hover {
+    /* Hover effect for footer media icons */
+    scale: 1.1;
+    transition: ease-in-out 0.3s;
+}
+
+/* Burger Menu */
+
+.burger-menu {
+    display: none;
+}
+
+#burger-toggle {
+    display: none;
+}
+
+.burger-icon {
+    display: none;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.burger-logo {
+    width: 3rem;
+}
+
+.burger-nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 75%;
+    background-color: var(--color-white);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 9;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: right 0.3s ease-in-out;
+}
+
+.burger-nav a {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-black);
+    text-transform: uppercase;
+}
+
+#burger-toggle:checked + .burger-icon + .burger-nav {
+    right: 0;
+}
+
+.burger-nav a:hover {
+    color: var(--color-light-green);
+}
+
+.portfolio__item{
+    cursor: pointer;
+}
+
+/* Responsive Design */
+
+@media (max-width: 875px) {
+    .nav__items {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .burger-icon {
+        display: block;
+    }
+
+    .footer__contacts {
+        flex-direction: column;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    .footer__medias{
+        flex-direction: column;
+    }
+
+    .profil {
+        flex-direction: column;
+        gap: 3rem;
+        padding: 3rem 5rem;
+    }
+
+    .profil__content{
+        align-items: center;
+    }
+
+    .header__title{
+        width: 90%;
+        font-size: 3rem;
+    }
+
+    .nav__title{
+        font-size: 2rem;
+    }
+
+    .portfolio{
+        padding: 3rem 0rem;
+    }
+    .portfolio__item{
+        min-width: 15rem;
+        max-width: 15rem;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .footer__medias{
+        flex-direction: row;
+        gap: 3rem;
+    }
+    .profil{
+        padding: 3rem 4rem;
+    }
+
+    .profil__title{
+        font-size: 3rem;
+    }
+
+    .profil__desc{
+        font-size: 1.25rem;
+    }
+
+    .profil__img{
+        display: none;
+    }
+}
+
+@media (min-width: 876px) and (max-width: 1350px) {
+    .header__title {
+        width: 90%;
+    }
+}
+
+/* Hover and Focus Effects */
+
+/* Navigation Items */
+.nav__item:hover,
+.nav__item:focus {
+    color: var(--color-light-green);
+    text-decoration: underline;
+}
+
+/* Profile Button */
+.profil__button:hover,
+.profil__button:focus {
+    background-color: var(--color-light-green);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+/* Portfolio Item */
+.portfolio__item:hover,
+.portfolio__item:focus {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Footer Media Icons */
+.footer__media:hover,
+.footer__media:focus {
+    color: var(--color-light-green);
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
