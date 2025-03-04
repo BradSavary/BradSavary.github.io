@@ -1,0 +1,81 @@
+/* NavBar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background-color: #101a38;
+    color: white;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .navbar .logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  .navbar .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+  }
+  
+  .navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .navbar .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .navbar .burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+  }
+  
+  /* Version mobile */
+  @media screen and (max-width: 768px) {
+    .navbar .nav-links {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      background-color: #101a38;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 10px 0;
+      text-align: center;
+    }
+  
+    .navbar .nav-links.active {
+      display: flex;
+    }
+  
+    .navbar .burger {
+      display: flex;
+    }
+  
+    .navbar .nav-links li {
+      margin: 15px 0;
+    }
+  
+    .navbar .nav-links li a {
+      font-size: 20px;
+    }
+
+    .logo{
+      font-size: 1rem;
+    }
+  }
+  
